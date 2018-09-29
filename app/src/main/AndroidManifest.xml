@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.examprel.examprep">
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -24,8 +25,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".RecyclerActivity" />
-        <activity android:name=".sqlite.SqliteActivity" />
-        <activity android:name=".sqlite.ViewActivity" />
         <activity android:name=".AddSub.FirstExpActivity" />
         <activity android:name=".AddSub.SecExpActivity" />
         <activity android:name=".sample.OperatorActivity" />
@@ -33,7 +32,9 @@
         <activity android:name=".Orientaion.SaveStateActivity" />
         <activity android:name=".LifeCycle.LicfeActivity" />
         <activity android:name=".ArrayExample.ListActivity" />
-        <activity android:name=".ArrayExample.AnimalListActivity"></activity>
+        <activity android:name=".ArrayExample.AnimalListActivity" />
+        <activity android:name=".Permission.GetPermitActivity" />
+        <activity android:name=".sqlite.LoginActivity"></activity>
     </application>
 
 </manifest>

@@ -19,8 +19,8 @@ import com.examprel.examprep.ArrayExample.ListActivity;
 import com.examprel.examprep.GPS.LocationActivity;
 import com.examprel.examprep.LifeCycle.LicfeActivity;
 import com.examprel.examprep.Orientaion.SaveStateActivity;
+import com.examprel.examprep.Permission.GetPermitActivity;
 import com.examprel.examprep.sample.OperatorActivity;
-import com.examprel.examprep.sqlite.SqliteActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -91,8 +91,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
-        } else if (id == R.id.nav_gallery) {
-            startActivity(new Intent(MainActivity.this,SqliteActivity.class));
+        }
+        else if (id == R.id.nav_gallery) {
+            //(new Intent(MainActivity.this,SqliteActivity.class));startActivity
         } else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(MainActivity.this, FirstExpActivity.class));
 
@@ -102,16 +103,22 @@ public class MainActivity extends AppCompatActivity
         else if (id == R.id.nav_location) {
             startActivity(new Intent(MainActivity.this, LocationActivity.class));
         }
- else if (id == R.id.nav_savestate) {
+        else if (id == R.id.nav_savestate) {
             startActivity(new Intent(MainActivity.this, SaveStateActivity.class));
 
-        }     else if (id == R.id.nav_arraylist) {
+        }
+        else if (id == R.id.nav_arraylist) {
                 startActivity(new Intent(MainActivity.this, ListActivity.class));
-
-            } else if (id == R.id.nav_share) {
+        }
+        else if (id == R.id.nav_share) {
             startActivity(new Intent(MainActivity.this, LicfeActivity.class));
 
-        } else if (id == R.id.nav_send) {
+        }
+        else if (id == R.id.nav_permit) {
+            startActivity(new Intent(MainActivity.this, GetPermitActivity.class));
+
+        }
+        else if (id == R.id.nav_send) {
 
         }
 

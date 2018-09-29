@@ -32,6 +32,10 @@
             android:id="@+id/nav_arraylist"
             android:icon="@drawable/ic_menu_manage"
             android:title="ArrayList" />
+        <item
+            android:id="@+id/nav_permit"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Permit" />
     </group>
 
     <item android:title="Communicate">
