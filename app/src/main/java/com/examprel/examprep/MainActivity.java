@@ -16,11 +16,13 @@ import android.view.View;
 
 import com.examprel.examprep.AddSub.FirstExpActivity;
 import com.examprel.examprep.ArrayExample.ListActivity;
+import com.examprel.examprep.BarCode.BarCodeActivity;
 import com.examprel.examprep.GPS.LocationActivity;
 import com.examprel.examprep.LifeCycle.LicfeActivity;
 import com.examprel.examprep.Orientaion.SaveStateActivity;
 import com.examprel.examprep.Permission.GetPermitActivity;
 import com.examprel.examprep.sample.OperatorActivity;
+import com.examprel.examprep.sqlite.LoginActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -120,8 +122,12 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.nav_send) {
 
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
         }
+        else if (id == R.id.nav_bar) {
 
+            startActivity(new Intent(MainActivity.this, BarCodeActivity.class));
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

@@ -34,7 +34,12 @@
         <activity android:name=".ArrayExample.ListActivity" />
         <activity android:name=".ArrayExample.AnimalListActivity" />
         <activity android:name=".Permission.GetPermitActivity" />
-        <activity android:name=".sqlite.LoginActivity"></activity>
+        <activity android:name=".sqlite.LoginActivity" />
+        <activity
+            android:name=".BarCode.ScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".BarCode.BarCodeActivity" />
+        <activity android:name=".BarCode.BarDetailsActivity"></activity>
     </application>
 
 </manifest>

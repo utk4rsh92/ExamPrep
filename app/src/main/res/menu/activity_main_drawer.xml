@@ -36,6 +36,11 @@
             android:id="@+id/nav_permit"
             android:icon="@drawable/ic_menu_send"
             android:title="Permit" />
+
+        <item
+            android:id="@+id/nav_bar"
+            android:icon="@drawable/ic_menu_send"
+            android:title="BarCode" />
     </group>
 
     <item android:title="Communicate">

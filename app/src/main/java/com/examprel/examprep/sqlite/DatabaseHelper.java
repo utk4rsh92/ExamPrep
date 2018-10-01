@@ -102,7 +102,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public  boolean checkUser(String email){
+    public  boolean checkUser(String trim, String email){
 
 
         // array of columns to fetch
