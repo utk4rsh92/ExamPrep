@@ -1,15 +1,17 @@
 package com.examprel.examprep.BarCode;
 
 public class BarList {
-     String name;
-    public String getName() {
-        return name;
+    public String getCodename() {
+        return codename;
     }
 
-    public BarList setName(String name) {
-        this.name = name;
+    public BarList setCodename(String codename) {
+        this.codename = codename;
         return this;
     }
+
+    String codename;
+
 
 
 }

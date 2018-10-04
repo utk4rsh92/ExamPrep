@@ -11,6 +11,7 @@ import com.examprel.examprep.R;
 
 public class BarCodeActivity extends AppCompatActivity {
     private Button btnScan;
+    private Button btnSubmit;
     TextView tvResult;
 
     @Override
@@ -19,6 +20,16 @@ public class BarCodeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bar_code);
         btnScan = (Button)findViewById(R.id.btn_scan);
         tvResult = (TextView)findViewById(R.id.tv_result) ;
+        btnSubmit = (Button)findViewById(R.id.btn_submitCode);
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BarCodeActivity.this,BarDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

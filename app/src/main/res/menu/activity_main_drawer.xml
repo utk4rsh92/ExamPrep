@@ -38,9 +38,14 @@
             android:title="Permit" />
 
         <item
-            android:id="@+id/nav_bar"
+        android:id="@+id/nav_bar"
+        android:icon="@drawable/ic_menu_send"
+        android:title="BarCode" />
+        <item
+            android:id="@+id/nav_cam"
             android:icon="@drawable/ic_menu_send"
-            android:title="BarCode" />
+            android:title="Camera" />
+
     </group>
 
     <item android:title="Communicate">

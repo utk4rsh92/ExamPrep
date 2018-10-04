@@ -16,12 +16,20 @@
         android:textStyle="bold"
     android:layout_marginBottom="50dp"
     android:text="TextView" />
-<Button
-android:id="@+id/btn_scan"
-android:layout_width="130dp"
-android:layout_height="50dp"
-android:text="Scan"
-android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Scan"
+        android:textAllCaps="false" />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_submitCode"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:textAllCaps="false" />
+
+</LinearLayout>
