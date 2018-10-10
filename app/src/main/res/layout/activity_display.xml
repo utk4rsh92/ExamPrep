@@ -61,4 +61,11 @@
         android:textStyle="bold"
         android:text="rrrr" />
 
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textAllCaps="false" />
+
 </LinearLayout>

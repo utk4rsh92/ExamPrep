@@ -1,5 +1,6 @@
 package com.examprel.examprep.ArrayExample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 
 public class DisplayActivity extends AppCompatActivity {
     private EditText ed1,ed2,ed3,ed4,ed5;
-    private Button btns;
+    private Button btns,btnSend;
     ArrayList<String> name ; 
     String val1,val2,val3,val4,val5;
     TextView tvOutput;
@@ -32,6 +33,16 @@ public class DisplayActivity extends AppCompatActivity {
         ed5 = (EditText) findViewById(R.id.ed5);
         tvOutput = (TextView)findViewById(R.id.txtResult);
         btns = (Button)findViewById(R.id.btnarray);
+        btnSend = (Button)findViewById(R.id.btnSendData);
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(DisplayActivity.this, ArrayResult.class);
+                i.putExtra("myData",name);
+                startActivity(i);
+
+            }
+        });
         
         btns.setOnClickListener(new View.OnClickListener() {
             @Override
