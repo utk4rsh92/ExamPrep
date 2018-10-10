@@ -36,7 +36,10 @@
             android:id="@+id/nav_permit"
             android:icon="@drawable/ic_menu_send"
             android:title="Permit" />
-
+        <item
+            android:id="@+id/nav_aray"
+            android:icon="@drawable/ic_menu_send"
+            android:title="array" />
         <item
         android:id="@+id/nav_bar"
         android:icon="@drawable/ic_menu_send"
@@ -45,6 +48,10 @@
             android:id="@+id/nav_cam"
             android:icon="@drawable/ic_menu_send"
             android:title="Camera" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Map" />
 
     </group>
 

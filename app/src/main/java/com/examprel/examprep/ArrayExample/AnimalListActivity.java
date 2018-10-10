@@ -18,7 +18,7 @@ public class AnimalListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_list);
-ListView animal = (ListView)findViewById(R.id.listViewAnimals);
+        ListView animal = (ListView)findViewById(R.id.listViewAnimals);
         animalList = new ArrayList<String>();
         getAnimalName();
 

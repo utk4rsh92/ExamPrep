@@ -15,11 +15,13 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.examprel.examprep.AddSub.FirstExpActivity;
+import com.examprel.examprep.ArrayExample.DisplayActivity;
 import com.examprel.examprep.ArrayExample.ListActivity;
 import com.examprel.examprep.BarCode.BarCodeActivity;
 import com.examprel.examprep.Camera.CameraActivity;
 import com.examprel.examprep.GPS.LocationActivity;
 import com.examprel.examprep.LifeCycle.LicfeActivity;
+import com.examprel.examprep.Map.MapsActivity;
 import com.examprel.examprep.Orientaion.SaveStateActivity;
 import com.examprel.examprep.Permission.GetPermitActivity;
 import com.examprel.examprep.sample.OperatorActivity;
@@ -125,9 +127,17 @@ public class MainActivity extends AppCompatActivity
 
             startActivity(new Intent(MainActivity.this, CameraActivity.class));
         }
+        else if (id == R.id.nav_aray) {
+
+            startActivity(new Intent(MainActivity.this, DisplayActivity.class));
+        }
         else if (id == R.id.nav_send) {
 
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        }
+        else if (id == R.id.nav_map) {
+
+            startActivity(new Intent(MainActivity.this, MapsActivity.class));
         }
         else if (id == R.id.nav_bar) {
 
